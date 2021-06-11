@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 export const MainContainer = styled.div`
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #232323;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,7 +58,10 @@ img{
 
 export const NewInput = styled(TextField)`
 width: 15rem;
-margin: 10rem;
+height: 4rem;
+margin: 0 3rem !important;
+color: white !important;
+padding: 0 !important;
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -69,15 +72,26 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: black;
-  transition: background-color #f7f7f7 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0 30px white #232323 !important;
+  background-color: #232323 !important;
+  transition: background-color white 5000s ease-in-out 0s !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px #232323 inset !important;
 }
 
 `
 
 export const ReposContainer = styled.div`
     width: 50%;
-    height: 80vh;
+    height: 90vh;
+    background-color: #ffffff;
+    border-radius: 10px 0 0 0;
 
     display: flex;
     flex-wrap: wrap;

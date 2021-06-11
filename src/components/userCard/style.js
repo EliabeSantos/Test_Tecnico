@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 export const MainContainer = styled.div`
     width: 50%;
-    height: 80vh;
-    background-color: #ffffff;
+    height: 90vh;
+    background-color: #232323;
     display: flex;
     flex-wrap: wrap;
     img{
-        height: 20rem;
-        width: 20rem;
+        height: 15rem;
+        width: 15rem;
         border-radius: 100%;
     }
    
@@ -42,4 +42,8 @@ export const TextContainer = styled.div`
         margin: 0;
         font-size: 18px;
     }
+`
+export const BioContainer = styled.div`
+  width: 100%;
+  text-align: center;
 `

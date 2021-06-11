@@ -5,7 +5,7 @@ const RepoCard = ({name, stars}) => {
 
     return <MainContainer>
         <p>Repositorio: {name}</p>
-        <p>Estrelas{stars}</p>
+        <p>Estrelas: {stars}</p>
     </MainContainer>
 }
 export default RepoCard

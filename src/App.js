@@ -79,14 +79,17 @@ const App = () => {
               buscar
             </Button>
             </NewForm>
-            {data?.map(({login, avatar_url,public_repos, repos_url}, key) => (
+            {data?.map(({login, avatar_url,public_repos, repos_url, bio}, key) => (
               <UserCard func={GetRepos} name={login} img={avatar_url} reposcount={public_repos} link={repos_url} />
             ))}
-            <ReposContainer>
-              {repos?.map(({name, stargazers_count}, key) => (
-              <RepoCard name={name} stars={stargazers_count} />
-            ))}
-          </ReposContainer>
+            {repos.length > 0 && 
+             <ReposContainer>
+             {repos?.map(({name, stargazers_count}, key) => (
+             <RepoCard name={name} stars={stargazers_count} />
+           ))}
+         </ReposContainer>
+            }
+           
             </MainContainer>
   
   );
