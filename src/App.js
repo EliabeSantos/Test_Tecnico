@@ -58,7 +58,8 @@ const App = () => {
       return response.json()
     }).then(function(data){
      
-      setRepos(data)  
+      setRepos(data)
+      console.log(data)  
     })
   }
 
@@ -84,8 +85,8 @@ const App = () => {
             ))}
             {repos.length > 0 && 
              <ReposContainer>
-             {repos?.map(({name, stargazers_count}, key) => (
-             <RepoCard name={name} stars={stargazers_count} />
+             {repos?.map(({name, stargazers_count, html_url}, key) => (
+             <RepoCard name={name} stars={stargazers_count} link={html_url} />
            ))}
          </ReposContainer>
             }

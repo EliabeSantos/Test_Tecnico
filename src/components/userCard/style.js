@@ -6,6 +6,7 @@ export const MainContainer = styled.div`
     background-color: #232323;
     display: flex;
     flex-wrap: wrap;
+    color: white;
     img{
         height: 15rem;
         width: 15rem;
@@ -19,6 +20,7 @@ export const MainContainer = styled.div`
         background-color: #25a244 !important;
         border-radius: 20px !important;
         text-transform: capitalize;
+        color: white !important;
     }
 
     @keyframes slideInFromLeft {

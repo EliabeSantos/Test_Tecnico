@@ -7,7 +7,17 @@ background-color: #232323;
 text-align: center;
 border-radius: 10px;
 margin: 5px 0 5px 0;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
 color:white;
+p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
 @keyframes flip-horizontal-bottom {
   0% {
     -webkit-transform: rotateX(180deg);
